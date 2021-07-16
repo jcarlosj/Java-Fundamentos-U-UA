@@ -1,8 +1,27 @@
+import java.util.Scanner;
+
 public class ConversionesTiposPrimitivos {
     public static void main(String[] args) {
-        convertStringToInteger();
-        convertStringToFloat();
-        convertStringToDouble();
+        // convertStringToInteger();
+        // convertStringToFloat();
+        // convertStringToDouble();
+        convertStringToIntegerUsingScanner();
+    }
+
+    public static void convertStringToIntegerUsingScanner() {
+        var sc = new Scanner( System .in );
+
+        System.out.print( "Digite un numero entero: " );
+        var valorIngresado1 = sc .nextInt();
+        System .out .printf( "valor ingresado es = %d es de tipo %s \n", valorIngresado1, type( valorIngresado1 ) );
+
+        System.out.print( "Digite otro numero entero: " );
+        var valorIngresado2 = sc .next();
+        System .out .printf( "valor ingresado es = %s es de tipo %s \n", valorIngresado2, type( valorIngresado2 ) );
+
+        var valorConvertido = Integer.parseInt( valorIngresado2 );
+        System .out .printf( "valor convertido es = %d es de tipo %s \n", valorConvertido, type( valorConvertido ) );
+
     }
 
     public static void convertStringToInteger() {
