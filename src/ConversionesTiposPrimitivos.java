@@ -5,9 +5,30 @@ public class ConversionesTiposPrimitivos {
         // convertStringToInteger();
         // convertStringToFloat();
         // convertStringToDouble();
+        convertNumbersToString();
         // convertStringToIntegerUsingScanner();
         // convertStringToFloatUsingScanner();
-        convertStringToDoubleUsingScanner();
+        // convertStringToDoubleUsingScanner();
+    }
+
+    public static void convertNumbersToString() {
+        int edad = 43;
+        var edadConvertida =  String .valueOf( edad );
+        System .out .println( "----- Convertir Integer a String -----" );
+        System .out .printf( "valor original es = %d es de tipo %s \n", edad, type( edad ) );
+        System .out .printf( "valor convertido es = %s es de tipo %s \n", edadConvertida, type( edadConvertida ) );
+
+        float altura = 1.67F;
+        var alturaConvertida =  String .valueOf( altura );
+        System .out .println( "----- Convertir Float a String -----" );
+        System .out .printf( "valor original es = %f es de tipo %s \n", altura, type( altura ) );
+        System .out .printf( "valor convertido es = %s es de tipo %s \n", alturaConvertida, type( alturaConvertida ) );
+
+        double pi = Math .PI;
+        var piConvertido =  String .valueOf( pi );
+        System .out .println( "----- Convertir Double a String -----" );
+        System .out .printf( "valor original es = %f es de tipo %s \n", pi, type( pi ) );
+        System .out .printf( "valor convertido es = %s es de tipo %s \n", piConvertido, type( piConvertido ) );
     }
 
     public static void convertStringToDoubleUsingScanner() {
