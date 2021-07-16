@@ -5,10 +5,32 @@ public class ConversionesTiposPrimitivos {
         // convertStringToInteger();
         // convertStringToFloat();
         // convertStringToDouble();
-        convertNumbersToString();
+        // convertNumbersToString();
         // convertStringToIntegerUsingScanner();
         // convertStringToFloatUsingScanner();
         // convertStringToDoubleUsingScanner();
+        extractCharacters();
+    }
+
+    public static void extractCharacters () {
+        Scanner sc = new Scanner( System.in );
+
+        char letter = "Hola amigos!" .charAt( 3 );       // Obtiene el caracter en la posicion 3 de la cadena
+        System .out .println( letter );
+
+        //  Iteramos la una cadena posicion por posicion
+        String mensaje = "Bienvenidos a Java!";
+
+        for( int i = 0; i < mensaje.length(); i++ ) {
+            System .out .print( mensaje .charAt( i ) + "|" );
+        }
+
+        System .out .println( "" );
+
+        System .out .print( "Digite un caracter: " );
+        char character = sc .nextLine() .charAt( 0 );
+
+        System .out .printf( "Has digitado: %c \n", character );
     }
 
     public static void convertNumbersToString() {
