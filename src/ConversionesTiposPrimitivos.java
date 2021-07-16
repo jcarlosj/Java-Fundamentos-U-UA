@@ -5,7 +5,24 @@ public class ConversionesTiposPrimitivos {
         // convertStringToInteger();
         // convertStringToFloat();
         // convertStringToDouble();
-        convertStringToIntegerUsingScanner();
+        // convertStringToIntegerUsingScanner();
+        convertStringToFloatUsingScanner();
+    }
+
+    public static void convertStringToFloatUsingScanner() {
+        var sc = new Scanner( System .in );
+
+        System.out.print( "Digite un numero decimal: " );
+        var valorIngresado1 = sc .nextFloat();
+        System .out .printf( "valor ingresado es = %f es de tipo %s \n", valorIngresado1, type( valorIngresado1 ) );
+
+        System.out.print( "Digite otro numero decimal: " );
+        var valorIngresado2 = sc .next();
+        System .out .printf( "valor ingresado es = %s es de tipo %s \n", valorIngresado2, type( valorIngresado2 ) );
+
+        var valorConvertido = Float.parseFloat( valorIngresado2 );
+        System .out .printf( "valor convertido es = %f es de tipo %s \n", valorConvertido, type( valorConvertido ) );
+
     }
 
     public static void convertStringToIntegerUsingScanner() {
