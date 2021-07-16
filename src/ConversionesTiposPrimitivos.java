@@ -6,7 +6,24 @@ public class ConversionesTiposPrimitivos {
         // convertStringToFloat();
         // convertStringToDouble();
         // convertStringToIntegerUsingScanner();
-        convertStringToFloatUsingScanner();
+        // convertStringToFloatUsingScanner();
+        convertStringToDoubleUsingScanner();
+    }
+
+    public static void convertStringToDoubleUsingScanner() {
+        var sc = new Scanner( System .in );
+
+        System.out.print( "Digite un numero de doble presicion: " );
+        var valorIngresado1 = sc .nextDouble();
+        System .out .printf( "valor ingresado es = %f es de tipo %s \n", valorIngresado1, type( valorIngresado1 ) );
+
+        System.out.print( "Digite otro numero de doble presicion: " );
+        var valorIngresado2 = sc .next();
+        System .out .printf( "valor ingresado es = %s es de tipo %s \n", valorIngresado2, type( valorIngresado2 ) );
+
+        var valorConvertido = Double.parseDouble( valorIngresado2 );
+        System .out .printf( "valor convertido es = %f es de tipo %s \n", valorConvertido, type( valorConvertido ) );
+
     }
 
     public static void convertStringToFloatUsingScanner() {
