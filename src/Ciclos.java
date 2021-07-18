@@ -7,6 +7,30 @@ public class Ciclos {
         cicloForDobleIteracion();
         usingBreak();
         usingContinue();
+        usingGoToBreak();
+        usingGoToContinue();
+    }
+
+    public static void usingGoToBreak() {
+        System.out.println( "For (using break y etiqueta 'go to') \n  Obtener el primer numero par entre 1 y 10" );
+        inicio :                        // etiqueta
+        for( int i = 0; i <= 10; i++ ) {
+            if( i % 2 == 0 ) {
+                System.out.println( "  i = " + i );
+                break inicio;           // break y posteriormente va a la linea de codigo etiquetada como inicio
+            }
+        }
+    }
+
+    public static void usingGoToContinue() {
+        System.out.println( "For (using continue y etiqueta 'go to') \n  Obtener todos los numeros pares entre 1 y 10" );
+        inicio :                        // etiqueta
+        for( int i = 0; i <= 10; i++ ) {
+            if( i % 2 == 0 ) {
+                System.out.println( "  i = " + i );
+                continue inicio;        // continue y posteriormente va a la linea de codigo etiquetada como inicio
+            }
+        }
     }
 
     public static void usingContinue() {
