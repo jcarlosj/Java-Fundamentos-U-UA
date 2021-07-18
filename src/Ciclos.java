@@ -5,6 +5,28 @@ public class Ciclos {
         cicloFor();
         cicloForEach();
         cicloForDobleIteracion();
+        usingBreak();
+        usingContinue();
+    }
+
+    public static void usingContinue() {
+        System.out.println( "For (using continue) \n  Obtener todos los numeros pares entre 1 y 10" );
+        for( int i = 0; i <= 10; i++ ) {
+            if( i % 2 == 0 ) {
+                System.out.println( "  i = " + i );
+                continue;
+            }
+        }
+    }
+
+    public static void usingBreak() {
+        System.out.println( "For (using break) \n  Obtener el primer numero par entre 1 y 10" );
+        for( int i = 0; i <= 10; i++ ) {
+            if( i % 2 == 0 ) {
+                System.out.println( "  i = " + i );
+                break;
+            }
+        }
     }
 
     public static void cicloForDobleIteracion() {
