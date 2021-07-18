@@ -4,6 +4,15 @@ public class Ciclos {
         cicloDoWhile();
         cicloFor();
         cicloForEach();
+        cicloForDobleIteracion();
+    }
+
+    public static void cicloForDobleIteracion() {
+        System.out.println( "For (doble iteracion)" );
+
+        for( int i = 0, j = 10; i < 11 && j >= 0; i++, j-- ) {
+            System.out.println( "  i = " + i + " -  j = " + j );
+        }
     }
 
     public static void cicloForEach() {
@@ -21,10 +30,8 @@ public class Ciclos {
     }
 
     public static void cicloFor() {
-        var contador = 0;
 
         System.out.println( "For" );
-
         for( int i = 0; i < 3; i++ ) {
             System.out.println( "  i = " + i );
         }
@@ -35,7 +42,6 @@ public class Ciclos {
         var contador = 0;
 
         System.out.println( "Do While" );
-
         do {
             System.out.println( "  contador = " + contador );
             contador++;
