@@ -7,8 +7,10 @@ public class MainAritmetica {
         calc .b = 2;
         calc .sumar();
         System.out.println( "El resultado de la resta: " + calc .restar() );
-        calc .multiplicar( 3, 3 );                                                      // El metodo espera recibir dos parametros
-        System.out.println( "El resultado de la division: " + calc .dividir( 9, 3 ) );  // El metodo espera recibir dos parametros
+        calc .multiplicar( 3, 3 );                          // El metodo espera recibir dos parametros
+        int resultado[] = calc .dividir( 9, 3 );            // El metodo espera recibir dos parametros
+        System.out.println( "El resultado de la division: " + resultado[ 0 ] );
+        System.out.println( "El resultado del modulo: " + resultado[ 1 ] );
         calc .sumar();
     }
 }

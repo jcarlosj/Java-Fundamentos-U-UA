@@ -21,10 +21,16 @@ public class Aritmetica {
     }
 
     // Metodo que recibe dos argumentos y retorna un valor de tipo entero
-    public float dividir( int argA, int argB ) {
-        a = argA;
-        b = argB;
-        return a / b;
+    public int[] dividir( int a, int b ) {
+        this .a = a;    //  this hace referencia al mismo objeto
+        this .b = b;
+        return new int[] { this .a / this .b, this .modulo( this .a, this .b ) };
+    }
+
+    public int modulo( int a, int b ) {
+        return a % b;
     }
 
 }
+
+/* NOTA: Los metodos estaticos no pueden acceder al operador this */
