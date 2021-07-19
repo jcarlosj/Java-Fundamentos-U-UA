@@ -4,6 +4,18 @@ public class Aritmetica {
     // Atributos
     int a, b;       // Su valor por defecto es 0
 
+    // Constructor: Aun al no definirlo Java lo hara automaticamente por nosotros inicializando todos los Atributos de clase de acuerdo a su tipo
+    public Aritmetica() {
+        System.out.println( "Ejecutando Aritmetica" );
+    }
+
+    //  Sobre carga de constructores, el Constructor por defecto no se generara cuando creamos una sobre carga.
+    public Aritmetica( int a, int b ) {
+        this .a = a;
+        this .b = b;
+        System.out.println( "Ejecutando Aritmetica (Constructor Sobrecargado)" );
+    }
+
     // Metodo comun
     public void sumar() {
         var resultado = a + b;
