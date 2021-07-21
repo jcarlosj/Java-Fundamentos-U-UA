@@ -3,8 +3,8 @@ package classes;
 // Definicion de una clase
 public class Persona {
     // Atributos
-    String nombres;
-    String apellidos;
+    public String nombres;
+    public String apellidos;
 
     // Metodos
     public void desplegarInformacion() {
