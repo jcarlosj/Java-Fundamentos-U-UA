@@ -48,4 +48,9 @@ public class Persona {
         this.eliminado = eliminado;
     }
 
+    // Este metodo los permitira obtener los valores de los atributos como una cadena
+    public String toString() {
+        return getClass() .getSimpleName() + ": [ nombres: " + this .nombres + ", apellidos: " + this .apellidos + ", sueldo: " + this .sueldo + ", eliminado: " + this .eliminado + " ]";
+    }
+
 }
