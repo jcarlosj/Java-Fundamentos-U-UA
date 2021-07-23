@@ -12,9 +12,13 @@ public class TestPersona {
 
         System.out.println( "Total Personas: " + Persona .cantidad );   // Obtenemos el numero de personas creadas usando el Contexto estatico de la clase
 
+        imprimir( p1 );
+        imprimir( p2 );
+        imprimir( p3 );
+    }
+
+    public static void imprimir( Persona persona ) {
         // Obtenemos los datos de cada persona usando el Contexto dinamico de la clase
-        System.out.println( p1 );   // Obtenemos el estado de los atributos del objeto
-        System.out.println( p2 );
-        System.out.println( p3 );
+        System.out.println( persona );   // Obtenemos el estado de los atributos del objeto
     }
 }
