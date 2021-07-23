@@ -68,7 +68,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return getClass() .getSimpleName() + ": [ apellidos=" + apellidos + ", direccion=" + direccion + ", edad=" + edad + ", genero=" + genero + ", nombres=" + nombres + " ]";
+        return getClass() .getSimpleName() + ": [ apellidos = " + apellidos + ", direccion = " + direccion + ", edad = " + edad + ", genero = " + genero + ", nombres = " + nombres + " ]";
     }
 
 }
