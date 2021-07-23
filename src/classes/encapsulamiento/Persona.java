@@ -1,7 +1,11 @@
 package classes.encapsulamiento;
 
 public class Persona {
+
+    public static int cantidad;     // Por defecto el valor para variables de tipo entero, es 0
+
     // Atributos de clase con encapsulados con nivel de acceso de privado
+    private int id;
     private String nombres;
     private String apellidos;
     private double sueldo;
@@ -13,6 +17,9 @@ public class Persona {
         this.apellidos = apellidos;
         this.sueldo = sueldo;
         this.eliminado = eliminado;
+
+        Persona .cantidad ++;
+        this .id = Persona .cantidad;
     }
 
     // Getters and setters
@@ -48,9 +55,10 @@ public class Persona {
         this.eliminado = eliminado;
     }
 
-    // Este metodo los permitira obtener los valores de los atributos como una cadena
+    // @Override indica que estamos sobre escribiendo este metodo que nos permitira obtener los valores de los atributos como una cadena
+    @Override
     public String toString() {
-        return getClass() .getSimpleName() + ": [ nombres: " + this .nombres + ", apellidos: " + this .apellidos + ", sueldo: " + this .sueldo + ", eliminado: " + this .eliminado + " ]";
+        return getClass() .getSimpleName() + ": [ id: " + this .id + ", nombres: " + this .nombres + ", apellidos: " + this .apellidos + ", sueldo: " + this .sueldo + ", eliminado: " + this .eliminado + " ]";
     }
 
 }
