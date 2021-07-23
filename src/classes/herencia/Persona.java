@@ -68,7 +68,20 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona: [ apellidos = " + apellidos + ", direccion = " + direccion + ", edad = " + edad + ", genero = " + genero + ", nombres = " + nombres + " ]";
+        // StringBuilder: Almacena cadenas de caracteres.
+        StringBuilder sb = new StringBuilder();
+
+        // StringBuilder: Su tamaño y contenido pueden modificarse. Los objetos de éste tipo son mutables. Esto es una diferencia con los String
+        sb .append( "Persona: " ) .append( "[ " );
+        sb .append( "nombres = " ) .append( this .nombres + ", " );
+        sb .append( "apellidos = " ) .append( this .apellidos + ", " );
+        sb .append( "genero = " ) .append( this .genero + ", " );
+        sb .append( "direccion = " ) .append( this .direccion + ", " );
+        sb .append( "edad = " ) .append( this .edad + ", " );
+        sb .append( "memoria = " ) .append( super .toString() );        //  Agregamos los datos de la clase padre (Direccion de memoria)
+        sb .append( " ]" );
+
+        return sb .toString();
     }
 
 }

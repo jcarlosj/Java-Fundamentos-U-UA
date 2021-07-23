@@ -45,6 +45,4 @@ public class Empleado extends Persona {
         return sb .toString();
     }
 
-    
-
 }
