@@ -1,6 +1,10 @@
 package classes.modificador_final;
 
-// Define una clase como final: Indicará que esta clase no puede extenderse, es decir no puede heredar sus caracteristicas a otra clase
-public final class Persona {
+public class Persona {
+
+    // Define un metodo como final: Indicará que este no puede sobre escribirse desde la clase hija
+    public final void imprimir( String value ) {
+        System.out.println( "value: " + value );
+    }
 
 }
