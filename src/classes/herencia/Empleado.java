@@ -10,11 +10,18 @@ public class Empleado extends Persona {
     private double sueldo;
 
     // Constructor
-    public Empleado( String nombre, double sueldo ) {
-        super( nombre );
+    public Empleado() {
+        this .id = ++Empleado .cantidad;
+    }
+
+    // Constructor
+    public Empleado( String nombres, double sueldo ) {
+        this();     // Invocamos el constructor que no usa argumentos
+
+        // Asignaciones sin usar super() es decir el constructor de la clase padre
+        this .nombres = nombres;
 
         this.sueldo = sueldo;
-        this .id = ++Empleado .cantidad;
     }
 
     // Getters and setters
