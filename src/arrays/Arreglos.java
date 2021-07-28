@@ -4,6 +4,18 @@ public class Arreglos {
     public static void main( String args[] ) throws Exception {
         arregloTipoPrimitivo();
         arregloTipoObjeto();
+        arregloInicializado();
+    }
+
+    public static void arregloInicializado() {
+        String fruta = "Lulo";
+        String frutas [] = { "Mandarina", "Mango", fruta ,"Mora" };         // Sintaxis resumida
+
+        System.out.println( " ==== Arreglos: valores por defecto ==== " );
+        for ( String nombre : frutas ) {
+            System.out.println( nombre );
+        }
+        System.out.println( "" );
     }
 
     public static void arregloTipoObjeto() {
