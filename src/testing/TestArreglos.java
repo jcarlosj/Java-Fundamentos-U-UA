@@ -11,6 +11,7 @@ public class TestArreglos {
 
     public static void matrices() {
         Matrices .tipoPrimitivo();
+        Matrices .inicializado();
     }
 
     public static void arreglos() {

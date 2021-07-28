@@ -1,6 +1,27 @@
 package arrays;
 
 public class Matrices {
+
+    public static void inicializado() {
+        String fruta = "Lulo";
+        String frutas[] = { "Sandia", "Banano", "Lima" };
+        String todasLasFrutas[][] = {
+            { "Mandarina", "Mango", fruta ,"Mora", "Piña" },
+            frutas,
+            { "Naranja", fruta ,"Fresa", "Limon" }
+        };         // Sintaxis resumida
+
+        // ? Iteramos los valores del array (forma tradicional)
+        System.out.println( "Elementos: " );
+        for( int i = 0; i < todasLasFrutas.length; i++ ) {
+            for( int j = 0; j < todasLasFrutas[ i ] .length; j++ ) {
+                System.out.print( todasLasFrutas[ i ][ j ] + " " );
+            }
+            System.out.println( "" );
+        }
+
+    }
+
     public static void tipoPrimitivo() {
         int[][] numeros = new int[ 3 ][ 2 ];    // Define filas/columnas de la matriz
 
