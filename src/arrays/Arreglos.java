@@ -3,6 +3,23 @@ package arrays;
 public class Arreglos {
     public static void main( String args[] ) throws Exception {
         arregloTipoPrimitivo();
+        arregloTipoObjeto();
+    }
+
+    public static void arregloTipoObjeto() {
+        Persona personas[] = new Persona[ 3 ];
+
+        // ! Modificamos el valor del objeto que por defecto sera null
+        personas[ 0 ] = new Persona( "Juan" );
+        personas[ 1 ] = new Persona( "Sofia" );
+
+        System.out.println( " ==== Arreglos de tipo referenciado ==== " );
+        for ( Persona p : personas ) {
+            System.out.println( p );
+        }
+        System.out.println( "" );
+
+
     }
 
     public static void arregloTipoPrimitivo() {
