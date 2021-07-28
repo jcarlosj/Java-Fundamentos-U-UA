@@ -1,13 +1,8 @@
 package arrays;
 
 public class Arreglos {
-    public static void main( String args[] ) throws Exception {
-        arregloTipoPrimitivo();
-        arregloTipoObjeto();
-        arregloInicializado();
-    }
 
-    public static void arregloInicializado() {
+    public static void inicializado() {
         String fruta = "Lulo";
         String frutas [] = { "Mandarina", "Mango", fruta ,"Mora" };         // Sintaxis resumida
 
@@ -18,7 +13,7 @@ public class Arreglos {
         System.out.println( "" );
     }
 
-    public static void arregloTipoObjeto() {
+    public static void tipoObjeto() {
         Persona personas[] = new Persona[ 3 ];
 
         // ! Modificamos el valor del objeto que por defecto sera null
@@ -31,10 +26,9 @@ public class Arreglos {
         }
         System.out.println( "" );
 
-
     }
 
-    public static void arregloTipoPrimitivo() {
+    public static void tipoPrimitivo() {
         int[] edades = new int[ 3 ];        // Define dimension del Array, en Java los Arrays son estaticos, es decir no pueden crecer dinamicamente
 
         System.out.println( " ==== Arreglos de tipo primitivo ==== " );
@@ -64,6 +58,7 @@ public class Arreglos {
         catch ( Exception e ) {
             System.out.println( "No se puede insertar un valor en un indice que no existe" );
         }
+        System.out.println( "" );
 
     }
 }
