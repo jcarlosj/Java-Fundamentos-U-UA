@@ -18,7 +18,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona [ nombre = " + nombre + " ], memoria = " + super .toString();
+        return "Persona [ nombre = " + nombre + ", memoria = " + super .toString() + " ]";
     }
 
 }

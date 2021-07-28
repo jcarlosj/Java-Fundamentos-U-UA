@@ -2,7 +2,41 @@ package arrays;
 
 public class Matrices {
 
+    public static void tipoObjeto() {
+        Persona personas[][] = new Persona[ 3 ][ 2 ];
+
+        System.out.println( " ==== Matriz: de tipo referenciado ==== " );
+        System.out.println( "personas: " + personas );
+
+        // ? Iteramos los valores del array (foreach)
+        System.out.println( "Elementos: " );
+        for( Persona[] filas : personas ) {
+            //System.out.print( filas + " " );
+            for( Persona value : filas ) {
+                System.out.print( value + " " );
+            }
+            System.out.println( "" );
+        }
+
+        // ! Modificamos el valor del objeto que por defecto sera null
+        personas[ 0 ][ 1 ] = new Persona( "Juan" );
+        personas[ 1 ][ 0 ] = new Persona( "Sofia" );
+
+        // ? Iteramos los valores del array (forma tradicional)
+        System.out.println( "Elementos: " );
+        for( int i = 0; i < personas.length; i++ ) {
+            for( int j = 0; j < personas[ i ] .length; j++ ) {
+                System.out.print( personas[ i ][ j ] + " " );
+            }
+            System.out.println( "" );
+        }
+
+
+    }
+
     public static void inicializado() {
+        System.out.println( " ==== Matriz: valores por defecto ==== " );
+
         String fruta = "Lulo";
         String frutas[] = { "Sandia", "Banano", "Lima" };
         String todasLasFrutas[][] = {
@@ -25,7 +59,7 @@ public class Matrices {
     public static void tipoPrimitivo() {
         int[][] numeros = new int[ 3 ][ 2 ];    // Define filas/columnas de la matriz
 
-        System.out.println( " ==== Matrices de tipo primitivo ==== " );
+        System.out.println( " ==== Matriz: de tipo primitivo ==== " );
         System.out.println( "numeros: " + numeros );
 
         // ? Iteramos los valores del array (foreach)
